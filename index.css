@@ -39,7 +39,7 @@
         color: beige;
         background-color: black;
         width: 100%;
-        height: 80vh;
+        /* height: 80vh; */
         font-family: 'Ubuntu', sans-serif;
     }
     .home .content{
@@ -274,9 +274,14 @@
         color: rgb(216, 11, 235);
     }
     .timeline-content{
+        display: flex;
+        flex-direction: column;
         background-color: #0d3d3d;
-        padding: 40px;
+        /* padding: 40px; */
         border-radius: 8px;
+        padding: 15px 10px;
+        height: 200px;
+        
     }
     .timeline-content h3{
         font-size: 20px;
