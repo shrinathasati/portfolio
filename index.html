@@ -16,37 +16,54 @@
     <!-- navigation bar for mobile -->
     <nav id="nav">
         <div id="logo">
-            <h1>Portfolio</h1>
+            <h1>Portfo<span>lio.</span></h1>
 
         </div>
-        <details>
+        
             
-            <ul>
-                <li class="items"><a href="#home">Home</a></li>
-                <li class="items"><a href="#about">About</a></li>
-                <li class="items"><a href="#education">Education</a></li>
-                <li class="items"><a href="#project">Project</a></li>
-                <li class="items"><a href="#skills">SKills</a></li>
-                <li class="items"><a href="#achievement">Achievement</a></li>
-            </ul>
-            <summary> 
-                menu
-            </summary>
-        </details>
-        <div class="menu-btn" >
+        <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#about">About</a></li>
+            <li class="items"><a href="#education">Education</a></li>
+            <li class="items"><a href="#project">Project</a></li>
+            <li class="items"><a href="#skills">SKills</a></li>
+            <li class="items"><a href="#achievement">Achievement</a></li>
+        </ul>
+        <div class="icon menu-btn">
             <i class="fas fa-bars"></i>
-            
-            
         </div>
+            
+        
         
     </nav>
+    <script>
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        
+        menuBtn.onclick=()=>{
+            menu.classList.add("active")
+            menuBtn.classList.add("hide")
+        }
+        cancelBtn.onclick=()=>{
+            menu.classList.remove("active")
+            menuBtn.classList.remove("hide")
+        }
+
+    </script>
  
     <!-- navigation bar for desktop-->
     <nav id="navbar">
         <div id="logo">
-            <h1>Portfolio</h1>
+            <h1>Portfo<span>lio.</span></h1>
         </div>
         <ul>
+            <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+            </div>
             <li class="item"><a href="#home">Home</a></li>
             <li class="item"><a href="#about">About</a></li>
             <li class="item"><a href="#education">Education</a></li>
@@ -54,12 +71,10 @@
             <li class="item"><a href="#skills">Skills</a></li>
             <li class="item"><a href="#achievement">Achievement</a></li>
         </ul>
-
-        <div class="menu-btn" >
-                <i class="fas fa-bars"></i>
-                
-                
-            </div>
+        <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        
     </nav>
 
     <!-- home section -->
